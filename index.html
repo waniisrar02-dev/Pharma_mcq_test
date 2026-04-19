@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharma MCQ Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Pharmacology MCQ Test</h1>
+        <div class="header">
+            <span>📋 Total: <span id="totalQuestions">0</span> Questions</span>
+            <span>🔄 Shuffled Each Visit</span>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div id="testContainer"></div>
+
+        <div class="submit-section">
+            <button id="submitBtn">📤 Submit Answers</button>
+            <div class="refresh-note">🔄 Refresh page for new shuffled test</div>
+        </div>
+    </div>
+
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <h2>📊 Test Results</h2>
+            <div class="score-display">
+                <div class="score-number"><span id="score">0</span>/<span id="total">0</span></div>
+                <div class="score-percent" id="percentage">0%</div>
+            </div>
+            <div id="resultDetails"></div>
+            <button id="closeModal">Close</button>
+            <button id="retakeBtn">🔄 New Test</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
